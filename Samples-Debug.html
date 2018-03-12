@@ -1,0 +1,67 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:25%;
+  }
+ </style>
+ <title>
+  Competition Language - Debug
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "4">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#debug">
+      DebugLCD
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#var">
+      DebugVar
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#end">
+      EndDebug
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#use">
+      How to Use
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "debug">DebugLCD</h1>
+   <p>
+This command starts a task that will take advantage of the LCD. It opens a window where you can navigate between all the values of the sensors, motors, I2C encoders, timers, Vex controller values, personal variables, and voltages of the cortex and backup battery.
+   </p>
+   <h1 id = "var">DebugVar</h1>
+   <p>
+This is a system array that contains the 8 personal variables displayed by the debugger window. You can reference and set them in your code and view them in the debugger window.
+
+   </p>
+   <h1 id = "end">EndDebug</h1>
+   <p>
+This just forcefully ends the debugger window and halts it.
+   </p>
+   <h1 id = "use">How to Use</h1>
+   <iframe src = "Code/Debug.c"></iframe>
+   <p>
+The debugging commands and variables are used to display values on the screen. If you use the command DebugLCD, it will initialate a task that displays things like sensor values, motor speeds, I2C encoders, timers, controller values, your personal variables, and voltages. This command will not interfer with the running of other parts to the code, but do not use this command when some other part of the code is using the LCD, there will be conflict.<br><br>
+Next, the DebugVar command stores the personal variables you want to display on the window. There are eight slots of memory and you can set them by placing the slot name inside the square brackets and setting it equal to a value just like any other variable. The slot names consist of a "V" followed by the number slot.<br><br>
+The last command is the EndDebug command. All it does is, whenever called, it stops running the debugger window.<br><br>
+When navigating the debugger window, there is a name and value on the first row. On the second row there are the words "Menu", "Type", "End". Pressing the button under "Menu" will change between the types,  (Sensors, Motors, etc.). Pressing the "Type" button will change the slot number (port1, port2, port3, etc.). Finally, pressing the "End" button will end the debugger window (just like using EndDebug).
+   </p>
+  </div>
+ </body>
+</html>

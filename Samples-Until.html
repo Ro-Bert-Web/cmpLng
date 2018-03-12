@@ -1,0 +1,55 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:33%;
+  }
+ </style>
+ <title>
+  Competition Language - Until
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "3">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#until">
+      Until
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#dountil">
+      DoUntil
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#use">
+      How to Use
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "until">Until</h1>
+   <p>
+The until command is a conditional wait command. All it does is wait for the condition you put in the parenthesis to be true. Only then does it proceed to the next line.
+   </p>
+   <h1 id = "dountil">DoUntil</h1>
+   <p>
+The do until command does the same as the until command, only with the added bonus of being able to run a body of commands until the statement is true
+   </p>
+   <h1 id = "use">How to Use</h1>
+   <iframe src = "Code/Until.c"></iframe>
+   <p>
+Both the Until command and the DoUntil command take in one conditional parameter. The will then wait until that parameter is true. In the Until's case, you do not want to have the condition require a line of code to change it unless you are using multitasking because it will just halt and wait on that line. But the DoUntil command works like an inverted while loop. If the condition is false, it will repeat the body of code, if it is true, it will exit.<br><br>
+Keep in mind that the DoUntil command will run the body of code once regardless of what the condition is. It only checks the condition after the loop has finished.
+   </p>
+  </div>
+ </body>
+</html>

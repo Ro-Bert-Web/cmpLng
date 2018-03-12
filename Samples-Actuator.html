@@ -1,0 +1,63 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:25%;
+  }
+ </style>
+ <title>
+  Competition Language - Actuator
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "4">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#set">
+      SetActuator
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#extend">
+      ExtendActuator
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#retract">
+      RetractActuator
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#use">
+      How to Use
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "set">SetActuator</h1>
+   <p>
+The set actuator command just sets the actuator specified to the value. A one means extended and a zero means retracted (unless you put the double action cylinder's conduits swapped). The actuator port can either be the name of it, or the digital port number it is in.
+   </p>
+   <h1 id = "extend">ExtendActuator</h1>
+   <p>
+The command extend actuator simply extends the specified actuator.
+   </p>
+   <h1 id = "retract">RetractActuator</h1>
+   <p>
+Just like extend actuator, retract actuator retracts the specified actuator.
+   </p>
+   <h1 id = "use">How to Use</h1>
+   <iframe src = "Code/Actuator.c"></iframe>
+   <p>
+Once you have plugged an actuator into a digital port, you an easily control it's position with these commands. Rather intuitively, the command ExtendActuator extends the actuator in the paramters (unless you have a double action that has it's tubing reversed) and the command RetractActuator retracts the actuator in the parameter. The command SetActuator takes in one port for which actuator, and a value of either true of false, or 1 or 0, or any other representation of on or off. It then sets the actuators position to out if on, and in if off.
+   </p>
+  </div>
+ </body>
+</html>

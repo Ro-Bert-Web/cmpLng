@@ -1,0 +1,54 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:33%;
+  }
+ </style>
+ <title>
+  Competition Language - Step
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "3">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#floor">
+      Flr
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#ceil">
+      Cel
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#use">
+      How to Use
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "floor">Flr</h1>
+   <p>
+The Flr function works very similarily to the Floor function that exists in robotC and every other programming language. The description is that it rounds the input down to the nearest whole number. It doesn't. For positive numbers it does, but for negative numbers, it actually rounds up. This Flr function fixes that problem. It rounds x down to the nearest whole number even if it is negative.
+   </p>
+   <h1 id = "ceil">Cel</h1>
+   <p>
+The Cel function fixes the same thing the Flr function did with Floor, but instead with Ceil. Ceil rounds up, but not for negative numbers, the Cel function fixes that. It rounds x up to the nearest whole number no matter its sign.
+   </p>
+   <h1 id = "use">How to Use</h1>
+   <iframe src = "Code/Step.c"></iframe>
+   <p>
+To use either of these commands, you just input a value. They will then output the rounded value (Up or down dependent on which function);
+   </p>
+  </div>
+ </body>
+</html>

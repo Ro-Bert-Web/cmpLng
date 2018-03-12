@@ -1,0 +1,83 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:16%;
+  }
+ </style>
+ <title>
+  Competition Language - Auton
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "6">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#select">
+      AutonSelection
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#startlist">
+      StartAutonomousList
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#start">
+      StartAutonomous
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#end">
+      EndAutonomous
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#endlist">
+      EndAutonomousList
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#use">
+      How to Use
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "select">AutonSelection</h1>
+   <p>
+This command would be placed in the pre-autonomous and allows you to select between the specified amount of autonomouses as well as an empty autonomous. The only problem is the fact that they will be refered to only by a number. So if you want it to have names, you will sadly have to type it yourself.
+   </p>
+   <h1 id = "startlist">StartAutonomousList</h1>
+   <p>
+This is the command that marks the start to the list of autonomouses in the following body of code.
+   </p>
+   <h1 id = "start">StartAutonomous</h1>
+   <p>
+All this does is it marks the beginning of the specified autonomous.
+   </p>
+   <h1 id = "end">EndAutonomous</h1>
+   <p>
+This line will just end the last autonomous started. You can then move on to the next autonomous
+   </p>
+   <h1 id = "endlist">EndAutonomousList</h1>
+   <p>
+You must have this line before you close off the body of autonomouses. It just ends off the list.
+   </p>
+   <h1 id = "use">How to Use</h1>
+   <iframe src = "Code/Auton.c"></iframe>
+   <p>
+These commands are all used to make multiple autonomouses easier to manage. In pre-autonomous, you would use the SelectAutonomous command to open a window in which you choose between the autonomouses you've programmed. It will select between "empty" where it does nothing, and 1 - whatever number you inputed. You must be disabled to use this command.<br><br>
+The next command is StartAutonomousList which is followed by a bracketed body of code containing you autonomouses. Inside this you will have lines of code such as StartAutonomous(x) followed by a colon. Everything between this line and the next EndAutonomous command will run the autonomous specified (You can just put a function call in here if you want).<br><br>
+At the very end of the autonomous list, before the closing bracket, you must use the EndAutonomousList command. This is all it is used for.
+   </p>
+  </div>
+ </body>
+</html>

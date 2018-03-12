@@ -1,0 +1,45 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:50%;
+  }
+ </style>
+ <title>
+  Competition Language - Bound
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "3">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#bound">
+      Bound
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#use">
+      How to Use
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "bound">Bound</h1>
+   <p>
+The bound function behaves very similarily to the mapping function. The only difference is what happens beyond the two fixed x values. Its code equivalent of it is constraining a mapped function to the two y values. This would be used for the very same reasons for using the mapping function, auto-correction, but it maxes out the values. So if you want a part of your robot to auto-correct, but never go too fast, this will keep it within those speeds.
+   </p>
+   <h1 id = "use">How to Use</h1>
+   <iframe src = "Code/Bound.c"></iframe>
+   <p>
+The bound function works exaclty like the <a href = "Samples-Map.html" style = "text-decoration:underline; font-weight:bold;">map</a> function, besides the fact that it also constrains the output between the two y values. This is useful if you either want a motor never to be going faster than a certain speed while auto-correcting (for more precision), or you are using Natural Language to start your motors.
+   </p>
+  </div>
+ </body>
+</html>

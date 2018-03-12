@@ -1,0 +1,54 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:33%;
+  }
+ </style>
+ <title>
+  Competition Language - QuerySpeed
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "3">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#seed">
+      SeedSpeed
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#query">
+      QuerySpeed
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#use">
+      How to Use
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "seed">SeedSpeed</h1>
+   <p>
+These commands work like the other speed commands but they are meant for variables. To accomplish this task, you must first save the beginning of your check. That is what the seed speed command is. You just tell it the variable you want to tell the speed of later and it will remember the beginning value. These commands can also be used for sensors or encoders, but it would provide the advantage of not setting the values to zero.
+   </p>
+   <h1 id = "query">QuerySpeed</h1>
+   <p>
+To actually acquire the speed of the variable, you must use the query result command. It works like the other speed commands. You just tell it the variable you would like to save the speed to, and the variable you saved to the seed speed a little while ago in your program.
+   </p>
+   <h1 id = "use">How to Use</h1>
+   <iframe src = "Code/QuerySpeed.c"></iframe>
+   <p>
+Just as the other speed commands, SeedSpeed and QuerySpeed are used to find the speed - or change per time - of something. The two commands are used in junction to find the speed of a variable or any other value that you could not have before. You initialize the value with SeedSpeed by inputing the value. You then would make any changes that you want to check the speed of to the variable, and finally use the QuerySpeed command with the output variable and the variable for the speed. This can be used right after one another for things like the vex channels which do not have their own speed commands, or a variable you have to make changes to on your own.
+   </p>
+  </div>
+ </body>
+</html>

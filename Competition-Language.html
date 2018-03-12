@@ -1,0 +1,160 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:20%;
+  }
+ </style>
+ <title>
+  Competition Language
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "5">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#new">
+      What's New
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#about">
+      About
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#downloadandsetup">
+      Downloading & Setup
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#commands">
+      Commands
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#history">
+      History
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "new">What's New</h1>
+   <a href = "#downloadandsetup" style = "font-weight:bold;border:solid;">Download Version 0.13</a>
+   <p>
+    <ul>
+     <li>Uploaded on March 1 2018</li>
+    </ul>
+   </p>
+   <h1 id = "about">About Competition Language</h1>
+   <p>
+Competition Language is a library I created for RobotC. It was designed to make competition level robots easier to program. Some of the commands exist in Natural Language, however, I made them more adaptable or effective in Competition Language.
+   </p>
+   <h1 id = "downloadandsetup">Downloading & Setup</h1>
+   <p>
+    <ul>
+     <li><a href = "#download">How to download</a></li>
+     <li><a href = "#setup">How to setup</a></li>
+    </ul>
+   </p>
+   <h2 id = "download">How to Download</h2>
+   <p>
+Competition Language is not predownloaded to your computer with RobotC like Natural Language is. You must download it yourself before you can use it in your program. Follow the steps below to download Competition Language to your computer.
+    <ol>
+     <li>
+Open your file manager and paste this file location in the location bar. <b>"C:\Program Files (x86)\Robomatter Inc\ROBOTC Development Environment 4.X\Includes"</b>
+     </li>
+     <li>
+Now that its destination is opened, click the <a href = "Code/Competition Language.c" download style = "text-decoration:underline;font-weight:bold;">Download</a> link
+     </li>
+     <li>
+Open another file manager window and go to your downloads to find the newly downloaded Competition Lanugage (it should be at the top when organized by date)
+     </li>
+     <li>
+Select Competition Language and right click on it selecting the cut feature.
+     </li>
+     <li>
+Go again to the other window with the location found before and right click in that window and paste it into that file location
+     </li>
+    </ol>
+For a walk through video of how to download Competition Language to your computer, watch my <a style = "text-decoration:underline;font-weight:bold;">Video</a>.
+   </p>
+   <h2 id = "setup">How to Setup</h2>
+   <p>
+Now that you have download Competition Language to your computer you are ready to code. Unfortunatly, you can't just go through the tabs up top and turn on Competition Language like with Natural Language. Instead you must paste something into your program to tell it you want to use Competition Language. Just paste <b>#include "Competition Language.c"</b> at the top of your program but right after the pragma statements.
+   </p>
+   <h1 id = "commands">Commands</h1>
+   <p>
+    <ul>
+     <li><a href = "#math" style = "text-decoration:underline;">Math</a></li>
+     <li><a href = "#timing" style = "text-decoration:underline;">Timing and Speed</a></li>
+     <li><a href = "#movement" style = "text-decoration:underline;">Robot Movement</a></li>
+     <li><a href = "#movement" style = "text-decoration:underline;">LCD Commands</a></li>
+    </ul>
+   </p>
+   <h2 id = "math">Math</h2>
+   <p>
+<a href = "Samples-Step.html" style = "color:#000000;"><b style = "color:#000066;">flr</b>(x);<br>
+<b style = "color:#000066;">cel</b>(x);</a><br>
+<a href = "Samples-Mod.html" style = "color:#000000;"><b style = "color:#000066;">mod</b>(input, rate);</a><br>
+<a href = "Samples-Avg.html" style = "color:#000000;"><b style = "color:#000066;">avg</b>(a, b);</a><br>
+<a href = "Samples-Compare.html" style = "color:#000000;"><b style = "color:#000066;">grt</b>(a, b);</a><br>
+<a href = "Samples-Compare.html" style = "color:#000000;"><b style = "color:#000066;">max</b>(a, b);</a><br>
+<a href = "Samples-Compare.html" style = "color:#000000;"><b style = "color:#000066;">min</b>(a, b);</a><br>
+<a href = "Samples-Map.html" style = "color:#000000;"><b style = "color:#000066;">map</b>(x, x1, x2, y1, y2);</a><br>
+<a href = "Samples-Constrain.html" style = "color:#000000;"><b style = "color:#000066;">constrain</b>(x, a, b);</a><br>
+<a href = "Samples-Bound.html" style = "color:#000000;"><b style = "color:#000066;">bound</b>(x, x1, x2, y1, y2);</a>
+   </p>
+   <h2 id = "timing">Timing and Speed</h2>
+   <p>
+<a href = "Samples-Speed.html" style = "color:#000000;"><b style = "color:#000066;">setSpeedAccuracy</b>(accuracy);</a><br>
+<a href = "Samples-Speed.html" style = "color:#000000;"><b style = "color:#000066;">sensorSpeed</b>(variable, sensorPort);</a><br>
+<a href = "Samples-Speed.html" style = "color:#000000;"><b style = "color:#000066;">encoderSpeed</b>(variable, encoderPort);</a><br>
+<a href = "Samples-Speed.html" style = "color:#000000;"><b style = "color:#000066;">rawEncoderSpeed</b>(variable, encoderPort);</a><br>
+<a href = "Samples-QuerySpeed.html" style = "color:#000000;"><b style = "color:#000066;">seedSpeed</b>(value);</a><br>
+<a href = "Samples-QuerySpeed.html" style = "color:#000000;"><b style = "color:#000066;">querySpeed</b>(variable, value);</a><br>
+<a href = "Samples-Until.html" style = "color:#000000;"><b style = "color:#000066;">until</b>(condition);</a><br>
+<a href = "Samples-Until.html" style = "color:#000000;"><b style = "color:#000066;">doUntil</b>(condition){body}</a>
+   </p>
+   <h2 id = "movement">Robot Movement</h2>
+   <p>
+<a href = "Samples-Actuator.html" style = "color:#000000;"><b style = "color:#000066;">setActuator</b>(port, value);</a><br>
+<a href = "Samples-Actuator.html" style = "color:#000000;"><b style = "color:#000066;">extendActuator</b>(port);</a><br>
+<a href = "Samples-Actuator.html" style = "color:#000000;"><b style = "color:#000066;">retractActuator</b>(port);</a><br>
+<a href = "Samples-Drive.html" style = "color:#000000;"><b style = "color:#000066;">setDrive</b>(leftDrive, rightDrive);<br>
+<b style = "color:#000066;">setDrive</b>(leftFront, leftBack, rightFront, rightBack);<br>
+<b style = "color:#000066;">configDrive</b>;<br>
+<b style = "color:#000066;">tankDrive</b>(leftSpeed, rightSpeed);<br>
+<b style = "color:#000066;">singleJoystick</b>(forwardSpeed, turningSpeed);<br>
+<b style = "color:#000066;">straffDrive</b>(forwardSpeed, turningSpeed, straffSpeed);</a><br>
+   </p>
+   <h2 id = "lcd">LCD Commands</h2>
+   <p>
+<a href = "Samples-Debug.html" style = "color:#000000;"><b style = "color:#000066;">debugLCD</b>;</a><br>
+<a href = "Samples-Debug.html" style = "color:#000000;"><b style = "color:#000066;">debugVar</b>[variable]</a><br>
+<a href = "Samples-Debug.html" style = "color:#000000;"><b style = "color:#000066;">endDebug</b>;</a><br>
+<a href = "Samples-Auton.html" style = "color:#000000;"><b style = "color:#000066;">autonSelection</b>(numberOfAutonomouses);<br>
+<b href = "Samples-Auton.html" style = "color:#000066;">startAutonomousList</b>{listOfAutonomousCodes}<br>
+<b href = "Samples-Auton.html" style = "color:#000066;">startAutonomous</b>(autonomousNumber):<br>
+<b href = "Samples-Auton.html" style = "color:#000066;">endAutonomous</b>;<br>
+<b href = "Samples-Auton.html" style = "color:#000066;">endAutonomousList</b>;</a><br>
+   </p>
+   <h1 id = "history">History</h1>
+   <p>
+   	<ul>
+   		<li>V0.13 March 1 2018</li>
+   	</ul>
+    <ul>
+     <li>V0.12 December 7 2017</li>
+    </ul>
+   </p>
+  </div>
+ </body>
+</html>

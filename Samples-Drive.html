@@ -1,0 +1,86 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:16%;
+  }
+ </style>
+ <title>
+  Competition Language - Drive
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "6">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#set">
+      SetDrive
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#config">
+      ConfigDrive
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#tank">
+      TankDrive
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#single">
+      SingleJoystick
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#straff">
+      StraffDrive
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#use">
+      How to Use
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "set">SetDrive</h1>
+   <p>
+The set drive command is a setup command. It tells the robot what motor ports are in what positions on the drive. There are two forms to this command, a two parameter one and a four parameter one. If you tell it only two motor ports, it will save the drive as a two wheeled drive (or just taking up two ports on the cortex). If you specify four motor ports, it will save the drive as a four wheeled drive.
+   </p>
+   <h1 id = "config">ConfigDrive</h1>
+   <p>
+This command will be used immediatly after the set drive command. All it does, is reverses the or unreverses the drive wheels in order to configure the drive appropriatly for the commands to work. You can do this in the pragmas, but it is just done in one line, correctly.
+   </p>
+   <h1 id = "tank">TankDrive</h1>
+   <p>
+The tank drive command runs whichever drive you specified earlier with the left speed and the right speed values.
+   </p>
+   <h1 id = "single">SingleJoystick</h1>
+   <p>
+This command runs a tank control drive base, but it runs off of one joystick. A forward and a turning value are the inputs but it also can be used as a helicopter type control, where there is a forward control and on another joystick, completely independent, the turning value can be drawn from.
+   </p>
+   <h1 id = "straff">StraffDrive</h1>
+   <p>
+This is the most complex the drive base command. Although its use is just as simple. All you do is tell it a forward speed, a straffing speed, and a turning speed. It then runs a holonomic drive with those values.
+   </p>
+   <h1 id = "use">How to Use</h1>
+   <iframe src = "Code/Drive.c"></iframe>
+   <p>
+The drive commands include five different commands. These include SetDrive, ConfigDrive, TankDrive, SingleJoystick, and StraffDrive. The first two are for setting up the drive base, while the last three are for controlling the drive base.<br>
+To setup your drive base, you must first type out the command SetDrive. There are two forms of this command: a two parameter and a four parameter. It will correctly choose the right version based on how many parameters you place in. The parameters are the drive wheels in the specified order (left is always before right, and front comes before the back of the same side). After you have specified which wheels are where, you can configure them. This step can be done in the pragmas by reversing the right side, but it can also be done here with the command ConfigDrive. If you ever want to reverse the drive where the back becomes the front, you could set the drive again with the motors moved around and configure once more.<br><br>
+The last three commands are the control commands. Both TankDrive and SingleJoystick are find with both a two wheeled drive and a four wheeled drive, but StraffDrive requires a four wheeled drive to work properly.<br><br>
+For TankDrive you input the speed of the left side and the speed of the right side (left first then right). These can and should be vex channels if you are controlling it with the controller.<br><br>
+With SingleJoystick, the two values are slightly different. They consist of a forward speed and a turning speed (clockwise to the right). It can be done with the verticle and horizontal channels of the joystick, which is why it is called SingleJoystick. But it can also be done with two seperate joysticks, which just separates the two so you don't turn if you are slightly to the side of forward.<br><br>
+Finally, the StraffDrive command runs any drive with straffing ability. It works for the holonomic X-Drive with omni-wheels, and a drive built with the mecanum wheels (assuming you built either of those correctly). Its parameters resemble the SingleJoystick command as the first one is forward and the second is turn. But because this is a straffing command, the last parameter is a straffing speed (to the right).
+   </p>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:20%;
+  }
+ </style>
+ <title>
+  Competition Language - Speed
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "5">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#accuracy">
+      SetSpeedAccuracy
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#sensor">
+      SensorSpeed
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#encoder">
+      EncoderSpeed
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#raw">
+      RawEncoderSpeed
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#use">
+      How to Use
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "accuracy">SetSpeedAccuracy</h1>
+   <p>
+This command tells RobotC how accurate you want your speeds. It defaults to a value of 33. But that value represents how many milliseconds the code waits on that line. The longer it waits, the more you are slowed down, but the more accurate the result is.
+   </p>
+   <h1 id = "sensor">SensorSpeed</h1>
+   <p>
+All of these three functions return the speed. This one is made for sensors in the analog or digital ports. You type in the sensor port or name and the variable it will save the speed to. It will return the value in rpms.
+   </p>
+   <h1 id = "encoder">EncoderSpeed</h1>
+   <p>
+This command does the same as the previous one. It just works for I2C ports on the backs of the motors. Just type in the motor port or motor name, and it will save its speed to the specified variable.
+   </p>
+   <h1 id = "raw">RawEncoderSpeed</h1>
+   <p>
+This is the most different of the three speed commands. It behaves the exact same as the encoder speed command, but it uses the raw angle to tell speed. The effect changes depending on the motor and its internal gear sets. With a 393 high strength gear set, the effect is that the result is about twice as accurate. This is due to the gear up from the gear the angle is measured on to the output shaft. With a high speed gear set its accuracy decreases, but is still just barely more accurate than encoder speed. But if you use the 269 motors, it is actually less accurate. For that matter, those motors can't get as accurate with any command, so just don't use them.
+   </p>
+   <h1 id = "use">How to Use</h1>
+   <iframe src = "Code/Speed.c"></iframe>
+   <p>
+All the speed commands are used to save the speed of a sensor to a specified variable. The exeption is the setSpeedAccuracy command. It's value defaults to 33 and a larger value inside it's paranthesis will result in a more accurate reading that takes longer to get. For the other three commands, you include in the parameters one variable first that will be the place where it saves the speed to, and a sensor. The command changes dependent on if you sensor is a digital or analog, or an integrated encoder.
+   </p>
+  </div>
+ </body>
+</html>

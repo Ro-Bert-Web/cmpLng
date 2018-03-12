@@ -1,0 +1,58 @@
+<html>
+ <link rel = "stylesheet" href = "Style.css">
+ <style>
+  td.navigate{
+   width:33%;
+  }
+ </style>
+ <title>
+  Competition Language - Map
+ </title>
+ <body>
+  <table class = "header">
+   <tr>
+    <td class = "title" colSpan = "3">
+     <a href = "Competition-Language.html">
+      Competition Language
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td class = "navigate">
+     <a href = "#map">
+      Map
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#use">
+      How to Use
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#ways">
+      Ways to Use
+     </a>
+    </td>
+   </tr>
+  </table>
+  <div>
+   <h1 id = "map">Map</h1>
+   <p>
+The mapping function is a quick way to make linear mapping of the input value. That is to say, it takes the value x, and plots it on a line with points (x1,y1) and (x2,y2). An easy way to think about using this is to say, when the input equals x1, output y1. If the input equals x2, output y2. Otherwise, output a proportionally sized value.
+   </p>
+   <h1 id = "use">How to use</h1>
+   <iframe src = "Code/Map.c"></iframe>
+   <p>
+The mapping function takes five inputs: two input points, two ouput points, and one input. If you were to graph the inputs and outputs, it would show a line intersecting the points (x1, y1) and (x2, y2). To use this for auto-correction, you need a measurable value, such as an angle of an arm. With that as your input, you set the two x values as your goal minus a constant threshold and your goal plus the threshold. The threshold is just how far from exact the motors will reach full speed. The next and final step is to set the direction. What you ask, is if the input is lower than goal (or whatever your first x value is), which direction does your motor need to turn. If positive, write 127 as you first y value and then -127 as your other. If negative, reverse the order.
+   </p>
+   <h2>Warning!</h2>
+   <p>
+If you are using Natural Language to control your motors, <b>DO NOT USE THIS FUNCTION</b>. Use <a href = "Samples-Bound.html" style = "text-decoration:underline;font-weight:bold;">bound</a> instead.
+   </p>
+   <h1 id = "ways">Ways to Use</h1>
+   <p>
+This command is really good for auto-correction software. The input would be a sensor value such as an angle. And if you scale the other four values around the speeds and the goal, you can make it go to that position almost exactly. Check the <a href = "#use" style = "text-decoration:underline;font-weight:bold;">how to use</a> for a more detailed tutorial.
+   </p>
+  </div>
+ </body>
+</html>
