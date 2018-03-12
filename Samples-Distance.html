@@ -2,11 +2,11 @@
  <link rel = "stylesheet" href = "Style.css">
  <style>
   td.navigate{
-   width:50%;
+   width:33%;
   }
  </style>
  <title>
-  Competition Language - Mod
+  Competition Language - Distance
  </title>
  <body>
   <table class = "header">
@@ -19,8 +19,13 @@
    </tr>
    <tr>
     <td class = "navigate">
-     <a href = "#mod">
-      Mod
+     <a href = "#degrees">
+      EncoderDegrees
+     </a>
+    </td>
+    <td class = "navigate">
+     <a href = "#distance">
+      WheelDistance
      </a>
     </td>
     <td class = "navigate">
@@ -31,15 +36,17 @@
    </tr>
   </table>
   <div>
-   <h1 id = "mod">Mod</h1>
+   <h1 id = "degrees">EncoderDegrees</h1>
    <p>
-The modulous function exists in RobotC already. It is a function that, in a mathmatical sense, divides the input by the rate, and then takes outputs the remainder. The effect is a value that increases along with the input until it equals the value of the rate. At that point, it jumps back to zero and starts the sequence again. This command just extends that pattern to negative numbers. Before, the input could not be a negative value.
+The EncoderDegrees command takes one motor port (the integrated motor port), and returns the value. This differs from RobotC's nMotorEncoder command as it actually returns the measure in degrees.
+   </p>
+   <h1 id = "distance">WheelDistance</h1>
+   <p>
+The Wheel Distance command takes a diameter of a wheel, and a rotation in degrees. It will then output the distance traveled by the wheel in inches.
    </p>
    <h1 id = "use">How to Use</h1>
-   <iframe src = "Code/Mod.c"></iframe>
+   <iframe src = "Code/Distance.c"></iframe>
    <p>
-(input, rate)<br>
-The modulous function will return the value of the modulous of input wrapped around rate. So when modulating the value of "x" around five, if it raises above five, it will wrap around to zero. If it drops below zero, it will wrap around to five.
    </p>
   </div>
  </body>
