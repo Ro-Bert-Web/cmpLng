@@ -15,5 +15,5 @@
 task main(){
 	int value = 4ft + 8in;									//4 Feet 8 Inches
 	value = 6rot + 5deg;										//6 Full Rotations And 5 More Degrees
-	value = 6minutes + 24sec + 500milisec;	//6 Minutes 24 Seconds And Half A Second
+	value = 6minutes + 24sec + 500millisec;	//6 Minutes 24 Seconds And Half A Second
 }
