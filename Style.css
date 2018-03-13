@@ -42,15 +42,15 @@ h2{
  font-weight:normal;
 }
 p{
- color:#000066;
- font-weight:bold;
+ color:#ff0000;
+// font-weight:bold;
  font-size:18px;
 }
-li{
- color:#000066;
- font-weight:bold;
- font-size:18px;
-}
+//li{
+// color:#000066;
+// font-weight:bold;
+// font-size:18px;
+//}
 iframe{
  width:100%;
  height:500px;
