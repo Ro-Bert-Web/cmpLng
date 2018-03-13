@@ -1,6 +1,6 @@
 body{
  background-color:#405050;
- color:#ff0000;
+ color:#000066;
  font-family:courier;
 }
 table.header{
@@ -26,7 +26,7 @@ td.navigate{
 a{
  text-decoration:none;
  font-family:courier;
- color:ff0000;
+ color:000066;
 }
 div{
  margin-top:100px;
