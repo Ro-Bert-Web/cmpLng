@@ -25,6 +25,7 @@ td.navigate{
 a{
  text-decoration:none;
  font-family:courier;
+ font-weight:bold;
  color:#ff0000;
 }
 div{
