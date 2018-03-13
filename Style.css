@@ -8,7 +8,7 @@ table.header{
  left:0;
  top:0;
  width:100%;
- border:solid;
+ border:solid #ff0000;
  background-color:#000055;
  text-align:center;
  font-weight:bold;
@@ -43,7 +43,6 @@ h2{
  font-weight:normal;
 }
 p{
- color:#000066;
  font-size:18px;
 }
 iframe{
