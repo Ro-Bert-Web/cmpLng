@@ -1,6 +1,6 @@
 body{
  background-color:#405050;
- color:#ff0000;
+ color:#aa0055;
  font-family:courier;
 }
 table.header{
@@ -8,7 +8,7 @@ table.header{
  left:0;
  top:0;
  width:100%;
- border:solid red;
+ border:solid;
  background-color:#000055;
  text-align:center;
  font-weight:bold;
@@ -25,7 +25,7 @@ td.navigate{
 a{
  text-decoration:none;
  font-family:courier;
- color:#000000;
+ color:#aa0055;
 }
 div{
  margin-top:100px;
@@ -42,7 +42,7 @@ h2{
  font-weight:normal;
 }
 p{
- color:#000000;
+ color:#aa0055;
  font-size:18px;
 }
 iframe{
