@@ -1,6 +1,6 @@
 body{
  background-color:#405050;
- color:#aa0000;
+ color:#ff0000;
  font-family:courier;
 }
 table.header{
@@ -25,19 +25,19 @@ td.navigate{
 a{
  text-decoration:none;
  font-family:courier;
- color:#aa0000;
+ color:#ff0000;
 }
 div{
  margin-top:100px;
 }
 h1{
- color:#aa0000;
+ color:#ff0000;
  font-size:24px;
  text-decoration:underline;
  font-weight:bold;
 }
 h2{
- color:#aa0000;
+ color:#ff0000;
  font-size:20px;
  text-decoration:underline;
  font-weight:bold;
