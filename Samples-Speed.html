@@ -2,7 +2,7 @@
  <link rel = "stylesheet" href = "Style.css">
  <style>
   td.navigate{
-   width:20%;
+   width:25%;
   }
  </style>
  <title>
@@ -11,7 +11,7 @@
  <body>
   <table class = "header">
    <tr>
-    <td class = "title" colSpan = "5">
+    <td class = "title" colSpan = "4">
      <a href = "Competition-Language.html">
       Competition Language
      </a>
@@ -34,11 +34,6 @@
      </a>
     </td>
     <td class = "navigate">
-     <a href = "#raw">
-      RawEncoderSpeed
-     </a>
-    </td>
-    <td class = "navigate">
      <a href = "#use">
       How to Use
      </a>
@@ -56,16 +51,12 @@ All of these three functions return the speed. This one is made for sensors in t
    </p>
    <h1 id = "encoder">EncoderSpeed</h1>
    <p>
-This command does the same as the previous one. It just works for I2C ports on the backs of the motors. Just type in the motor port or motor name, and it will save its speed to the specified variable.
-   </p>
-   <h1 id = "raw">RawEncoderSpeed</h1>
-   <p>
-This is the most different of the three speed commands. It behaves the exact same as the encoder speed command, but it uses the raw angle to tell speed. The effect changes depending on the motor and its internal gear sets. With a 393 high strength gear set, the effect is that the result is about twice as accurate. This is due to the gear up from the gear the angle is measured on to the output shaft. With a high speed gear set its accuracy decreases, but is still just barely more accurate than encoder speed. But if you use the 269 motors, it is actually less accurate. For that matter, those motors can't get as accurate with any command, so just don't use them.
+This command does the same as the previous one. It just works for I2C ports on the backs of the motors. Just type in the motor port or motor name, and it will save its speed to the specified variable. It can also provide about twice the accuracy as before depending on the gear set inside the motor.
    </p>
    <h1 id = "use">How to Use</h1>
    <iframe src = "Code/Speed.c"></iframe>
    <p>
-All the speed commands are used to save the speed of a sensor to a specified variable. The exeption is the setSpeedAccuracy command. It's value defaults to 33 and a larger value inside it's paranthesis will result in a more accurate reading that takes longer to get. For the other three commands, you include in the parameters one variable first that will be the place where it saves the speed to, and a sensor. The command changes dependent on if you sensor is a digital or analog, or an integrated encoder.
+All the speed commands are used to save the speed of a sensor to a specified variable. The exeption is the setSpeedAccuracy command. It's value defaults to 33 and a larger value inside it's paranthesis will result in a more accurate reading that takes longer to get. For the other two commands, you include in the parameters one variable first that will be the place where it saves the speed to, and a sensor. The command changes dependent on if you sensor is a digital or analog, or an integrated encoder.
    </p>
   </div>
  </body>
